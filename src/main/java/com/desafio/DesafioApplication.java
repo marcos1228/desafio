@@ -1,4 +1,4 @@
-package com.boat.apiclient;
+package com.desafio;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
