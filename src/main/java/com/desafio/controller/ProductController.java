@@ -1,4 +1,4 @@
-package com.boat.apiclient.controller;
+package com.desafio.controller;
 
 import java.util.List;
 
@@ -9,7 +9,7 @@ import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
-import com.boat.apiclient.domain.model.Product;
+import com.desafio.domain.model.Product;
 
 @RestController
 @RequestMapping("/api/products")
