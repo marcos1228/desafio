@@ -12,6 +12,8 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
 import com.desafio.domain.model.Product;
+import com.desafio.domain.model.dto.request.ProductDtoRequest;
+import com.desafio.domain.model.dto.response.ProductDtoRespoonse;
 import com.desafio.service.ProductService;
 
 @RestController
@@ -20,7 +22,7 @@ public class ProductController {
 	@Autowired
 	private ProductService productService;
 	@PostMapping()
-	public ResponseEntity<ArrayList<Product>> save(@RequestBody List<Product> product) {
+	public ResponseEntity<ArrayList<ProductDtoRespoonse>> save(@RequestBody List<ProductDtoRequest> product) {
 		return ResponseEntity.status(HttpStatus.CREATED).body(productService.save(product));
 	}
 }
